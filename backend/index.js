@@ -21,7 +21,7 @@ try {
 // middleware
 // origin = domain, using 3000(default react localhost)
 // enable cors
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "http://127.0.0.1:5173" }));
 // app.use(cors());
 app.use(cookieParser());
 

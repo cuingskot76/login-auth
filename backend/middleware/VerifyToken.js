@@ -4,7 +4,7 @@ export const verifyToken = (req, res, next) => {
   try {
     const authHeader = req.headers["authorization"];
     const token = authHeader && authHeader.split(" ")[1];
-    console.log(token);
+    // console.log(token);
 
     // 401 = unauthorize
     if (token === null) return res.sendStatus(401);
